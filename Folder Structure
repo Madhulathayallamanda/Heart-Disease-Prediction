@@ -1,0 +1,10 @@
+Heart-Disease-Prediction/
+├── data/
+│   └── heart.csv
+├── notebook/
+│   └── model_training.ipynb
+├── app/
+│   └── streamlit_app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
