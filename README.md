@@ -1,48 +1,37 @@
 # 💓 Heart Disease Prediction App
-A machine learning web app using Streamlit that predicts the risk of heart disease from patient input. Trained on the UCI Heart Disease dataset with multiple models, the app selects the best one for predictions.
+A machine learning web app built with Streamlit that predicts the risk of heart disease based on patient input. The model is trained using the UCI Heart Disease dataset and compares multiple algorithms to select the best performer.
 
 ## 🚀 Features
 - Real-time prediction with confidence score
-- Sidebar form to enter patient data
-- Top 5 feature importance visualization
-- User logs saved with timestamp
+- Sidebar form for interactive input
+- Visual display of top 5 feature importances
+- Saves prediction logs with timestamp
 - Compares Random Forest, Logistic Regression, and Gradient Boosting
 
 ## 🔧 Tech Stack
 Python, Streamlit, scikit-learn, pandas, joblib, matplotlib
 
-## 📁 Files
-- `app.py`: Main Streamlit app
-- `model.py`: Trains & saves best model
-- `explain_model.py`: Saves feature importance plot
-- `heart.csv`: Dataset
-- `model.pkl`: Trained model
-- `feature_importance.png`: Plot image
-- `user_logs.csv`: Logs of predictions
-- `requirements.txt`: Python dependencies
+## 📁 File Structure
+- `app.py`: Streamlit web application
+- `model.py`: Trains and selects the best ML model
+- `explain_model.py`: Generates feature importance plot
+- `heart.csv`: Input dataset (UCI Heart Disease)
+- `requirements.txt`: Required Python packages
+- `README.md`: Project overview and usage guide
 
-## ▶️ Run Locally
+## ▶️ How to Run Locally
 ```bash
 pip install -r requirements.txt
 python model.py
 streamlit run app.py
 
-## 📤 Deploy
-You can deploy this project on [Streamlit Cloud](https://share.streamlit.io/) by uploading all files in this repository.  
-Steps:
-1. Go to Streamlit Cloud and sign in.
-2. Click **"New App"**.
-3. Connect your GitHub repo.
-4. Set the main file as `app.py`.
-5. Click **"Deploy"**.
+📤 Deploy | 🙋‍♀️ Author | 📄 License
+Deploy via Streamlit Cloud:
+Link your GitHub repo
+Set app.py as the main file
+Click Deploy
+Author: Yallamanda Madhulatha, CSE 3rd Year
+📧 your-email@example.com | 🔗 LinkedIn
 
-## 🙋‍♀️ Author
-**Yallamanda Madhulatha**  
-CSE 3rd Year  
-📧 your-email@example.com  
-🔗 [LinkedIn](https://linkedin.com/in/your-profile)
-
-## 📄 License
-This project is licensed under the **MIT License**.  
-You are free to use, modify, and distribute with attribution.
+License: MIT License – Free to use, modify, and distribute with attribution.
 
