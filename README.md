@@ -1,61 +1,79 @@
-# 💓 Heart Disease Prediction App
+# 🫀 Heart Disease Prediction using Machine Learning
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://YOUR-APP-URL)
+This project uses various machine learning algorithms to predict whether a patient is likely to have heart disease based on medical attributes. The goal is to assist healthcare professionals by providing a second opinion based on data analysis.
 
-A Streamlit-based machine learning web app that predicts the risk of heart disease based on patient health data. It uses the UCI Heart Disease dataset and selects the best-performing model for real-time prediction.
+## 📊 Dataset
 
-## 🚀 Features
-- Predicts heart disease risk based on 13 patient attributes
-- Uses the best model out of Random Forest, Logistic Regression, and Gradient Boosting
-- Displays top 5 feature importances
-- Sidebar form for interactive input
-- Saves input + prediction logs with timestamp to `user_logs.csv`
+The dataset used is from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/heart+Disease). It includes 303 patient records with 14 attributes such as age, sex, cholesterol level, resting blood pressure, etc.
 
-## 🧠 ML Models Used
-- ✅ Random Forest (best accuracy)
+## 🧠 Algorithms Used
+
 - Logistic Regression
-- Gradient Boosting
+- K-Nearest Neighbors (KNN)
+- Support Vector Machine (SVM)
+- Decision Tree
+- Random Forest
 
-## 🔧 Tech Stack
-- Python
-- Streamlit
-- scikit-learn
-- pandas
-- joblib
-- matplotlib
+## 🔍 Exploratory Data Analysis
 
-## 📁 Project Structure
-heart-disease-predictor/
-├── app.py # Streamlit frontend
-├── model.py # Trains and saves best model
-├── explain_model.py # Feature importance plot
-├── heart.csv # Dataset (UCI Heart Disease)
-├── requirements.txt # Dependencies
-├── README.md # This file
+- Null values handled
+- Correlation heatmap
+- Target class distribution
+- Pairplots for feature relationships
 
-## ▶️ Run Locally
+## 📈 Model Evaluation
+
+| Model              | Accuracy Score |
+|-------------------|----------------|
+| Logistic Regression | 86.89%        |
+| K-Nearest Neighbors | 83.60%        |
+| Support Vector Machine | 85.25%     |
+| Decision Tree       | 81.96%        |
+| Random Forest       | 88.52% ✅      |
+
+✅ **Random Forest performed best** on the dataset.
+
+## 🌐 Live Web App (Streamlit)
+
+We have also deployed this project as a simple web app using Streamlit.
+
+👉 [Click here to try the live app](#) *(Coming soon)*
+
+Or run locally:
+
 ```bash
+streamlit run streamlit_app.py
+
+⚙️ How to Run Locally
+# Clone the repo
 git clone https://github.com/Madhulathayallamanda/Heart-Disease-Prediction.git
 cd Heart-Disease-Prediction
+
+# Install dependencies
 pip install -r requirements.txt
-python model.py        # Train and save the best model
-streamlit run app.py   # Launch the app
 
-📤 Deploy on Streamlit
-Go to Streamlit Cloud
-Click New App
-Select: Madhulathayallamanda/Heart-Disease-Prediction
-Set the main file to app.py
-Click Deploy
-Your app will be live at:
-🔗 https://madhulathayallamanda-heart-disease-prediction.streamlit.app
+# Run the Streamlit app
+streamlit run streamlit_app.py
 
-🙋‍♀️ Author
-Yallamanda Madhulatha
-CSE 3rd Year, Anurag University
-📧 madhulathayallamanda@gmail.com
+🗂️ Project Structure
+Heart-Disease-Prediction/
+├── heart.csv
+├── model_training.ipynb
+├── streamlit_app.py
+├── requirements.txt
+└── README.md
 
-📄 License
-This project is licensed under the MIT License – free to use, modify, and distribute with attribution.
+✅ Requirements
+pip install -r requirements.txt
 
+🧪 Tech Stack
+Python
+Scikit-learn
+Pandas, NumPy
+Matplotlib, Seaborn
+Streamlit (for web app)
+
+📬 Contact
+Madhulatha Yallamanda
+📧madhulathayallamanda@gmail.com
 
