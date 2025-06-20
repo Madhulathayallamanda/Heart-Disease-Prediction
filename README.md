@@ -26,12 +26,15 @@ python model.py
 streamlit run app.py
 
 📤 Deploy | 🙋‍♀️ Author | 📄 License
-Deploy via Streamlit Cloud:
-Link your GitHub repo
-Set app.py as the main file
-Click Deploy
-Author: Yallamanda Madhulatha, CSE 3rd Year
-📧 your-email@example.com | 🔗 LinkedIn
+Deploy on Streamlit Cloud → use app.py as the main file.
+Author: Yallamanda Madhulatha – CSE 3rd Year
+📧 madhulathayallamanda@gmail.com | 🔗 LinkedIn
 
-License: MIT License – Free to use, modify, and distribute with attribution.
+
+### ✅ Ready to Deploy on Streamlit Cloud?
+Go to [https://share.streamlit.io](https://share.streamlit.io), log in with GitHub, and:
+1. Click **“New App”**
+2. Select this repo: `Madhulathayallamanda/Heart-Disease-Prediction`
+3. Set main file: `app.py`
+4. Click **Deploy**
 
